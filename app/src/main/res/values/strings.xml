@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">sdcl</string>
+
+    <string name="panel">Farmers\' Panel</string>
+    <string name="search">Type to search</string>
+    <string name="details">Personal Details</string>
+
+    <string name="item_one">Item One</string>
+    <string name="item_two">Item Two</string>
+    <string name="item_three">Item Three</string>
+
+    <string name="take_photo">Take a photo</string>
+    <string name="upload_photo">Upload Photo</string>
+
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="birth_place">Birth Place</string>
+    <string name="dob">Date of Birth</string>
+    <string name="house_number">House Number</string>
+    <string name="community">Community</string>
+    <string name="occupation">Occupation</string>
+    <string name="district">District</string>
+    <string name="region">Region</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="bio">Bio</string>
+
+    <string name="short_intro">Write a short introduction</string>
+
+    <string name="btn_reset">Reset</string>
+    <string name="btn_save">Save</string>
+
+    <string name="err_empty">Can not be empty</string>
+
+
+
+
+
+
+
+</resources>
