@@ -48,80 +48,12 @@ fun ItemTwo(modifier: Modifier = Modifier) {
             .padding(24.dp)
             .fillMaxWidth()
     ) {
-        Row(
-            horizontalArrangement = Arrangement.Center,
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Avatar(size=90.dp)
-            
-            Spacer(modifier = Modifier.width(30.dp))
-
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Box(
-                    modifier = Modifier
-                        .size(40.dp)
-                        .border(
-                            border = BorderStroke(
-                                width = 1.5.dp,
-                                color = MaterialTheme.colors.onBackground
-                            ),
-                            shape = RoundedCornerShape(25.dp)
-                        ),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Icon(
-                        modifier = Modifier.size(25.dp),
-                        painter = painterResource(id = R.drawable.ic_camera),
-                        contentDescription = "Take photo"
-                    )
-                }
-                Text(
-                    text = stringResource(id = R.string.take_photo),
-                    fontSize = 12.sp,
-                    fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colors.secondary
-                )
-            }
-
-            Spacer(modifier = Modifier.width(25.dp))
-
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Box(
-                    modifier = Modifier
-                        .size(40.dp)
-                        .background(
-                            MaterialTheme.colors.onBackground,
-                            shape = RoundedCornerShape(25.dp)
-                        ),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Icon(
-                        modifier = Modifier.size(25.dp),
-                        painter = painterResource(id = R.drawable.ic_upload),
-                        contentDescription = "Take photo",
-                        tint = Color.White
-                    )
-                }
-                Text(
-                    text = stringResource(id = R.string.upload_photo),
-                    fontSize = 12.sp,
-                    fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colors.onBackground
-                )
-            }
-
-        }
+        UploadImage()
 
         Column(
             modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.End
-        ) {
-            Gender()
-        }
+        ) { Gender() }
 
         Inputs()
 
@@ -196,8 +128,5 @@ fun Gender() {
             }
         }
     }
-
-
-
 }
 

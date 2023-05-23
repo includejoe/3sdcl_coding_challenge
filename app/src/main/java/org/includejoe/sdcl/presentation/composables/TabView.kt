@@ -31,8 +31,8 @@ fun TabView(
             .fillMaxWidth()
             .shadow(
                 elevation = 3.dp,
-                ambientColor = Color.Red,
-                spotColor = Color.Red,
+                ambientColor = MaterialTheme.colors.secondary,
+                spotColor = MaterialTheme.colors.secondary,
                 shape = MaterialTheme.shapes.medium
             )
             .background(

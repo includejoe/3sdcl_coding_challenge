@@ -30,31 +30,35 @@ fun Panel(
             .fillMaxWidth()
             .height(180.dp)
             .shadow(
-                elevation = 3.dp,
-                ambientColor = Color.Red,
-                spotColor = Color.Red,
+                elevation = 4.dp,
+                ambientColor = MaterialTheme.colors.secondary,
+                spotColor = MaterialTheme.colors.secondary,
                 shape = MaterialTheme.shapes.medium
-            ).background(
+            )
+            .background(
                 Color.White,
                 shape = MaterialTheme.shapes.medium
             ),
         verticalArrangement = Arrangement.Center
-
     ) {
         Row(
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center
         ) {
-            Box(modifier = modifier
+            Column(modifier = modifier
                 .size(60.dp)
                 .shadow(
-                    elevation = 5.dp,
-                    ambientColor = Color.Red,
-                    spotColor = Color.Red,
+                    elevation = 4.dp,
+                    ambientColor = MaterialTheme.colors.secondary,
+                    spotColor = MaterialTheme.colors.secondary,
+                    shape = RoundedCornerShape(8.dp)
+                ).background(
+                    Color.White,
                     shape = RoundedCornerShape(8.dp)
                 ),
-                contentAlignment = Alignment.Center
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Icon(
                     painter = painterResource(id = R.drawable.ic_agenda),
