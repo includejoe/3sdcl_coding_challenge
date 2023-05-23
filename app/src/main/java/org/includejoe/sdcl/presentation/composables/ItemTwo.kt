@@ -48,15 +48,12 @@ fun ItemTwo(modifier: Modifier = Modifier) {
             .padding(24.dp)
             .fillMaxWidth()
     ) {
-
         UploadImage()
 
         Column(
             modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.End
-        ) {
-            Gender()
-        }
+        ) { Gender() }
 
         Inputs()
 
@@ -131,8 +128,5 @@ fun Gender() {
             }
         }
     }
-
-
-
 }
 

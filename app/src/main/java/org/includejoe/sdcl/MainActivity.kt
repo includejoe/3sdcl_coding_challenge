@@ -28,6 +28,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             SdclTheme {
+                // TODO: Add Gradient to header
+
                 var selectedTabIndex by remember { mutableStateOf(0) }
                 val constraints = ConstraintSet {
                     val header = createRefFor("header")
