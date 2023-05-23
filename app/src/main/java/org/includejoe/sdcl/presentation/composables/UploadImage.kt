@@ -38,6 +38,7 @@ fun UploadImage() {
 
     val cameraLauncher = rememberLauncherForActivityResult(contract = ActivityResultContracts.TakePicturePreview()) {
         bitmap.value = it
+        imageUri = null
     }
 
     val galleryLauncher = rememberLauncherForActivityResult(contract = ActivityResultContracts.GetContent()) { uri ->
@@ -52,6 +53,7 @@ fun UploadImage() {
             bitmap.value = ImageDecoder.decodeBitmap(source)
         }
     }
+
 
     Row(
         horizontalArrangement = Arrangement.Center,
@@ -74,9 +76,7 @@ fun UploadImage() {
                         ),
                         shape = RoundedCornerShape(25.dp)
                     )
-                    .clickable {
-                        cameraLauncher.launch()
-                    },
+                    .clickable { cameraLauncher.launch() },
                 contentAlignment = Alignment.Center
             ) {
                 Icon(
@@ -105,9 +105,7 @@ fun UploadImage() {
                         MaterialTheme.colors.onBackground,
                         shape = RoundedCornerShape(25.dp)
                     )
-                    .clickable {
-                        galleryLauncher.launch("image/*")
-                    },
+                    .clickable { galleryLauncher.launch("image/*") },
                 contentAlignment = Alignment.Center
             ) {
                 Icon(

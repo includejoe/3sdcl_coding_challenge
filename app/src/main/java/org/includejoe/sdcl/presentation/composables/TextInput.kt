@@ -55,7 +55,7 @@ fun TextInput(
                 .height(50.dp)
                 .focusRequester(focusRequester ?: FocusRequester()),
             colors = TextFieldDefaults.outlinedTextFieldColors(
-                backgroundColor = MaterialTheme.colors.onPrimary,
+                backgroundColor = Color.White,
                 disabledTextColor = MaterialTheme.colors.onBackground,
                 textColor = MaterialTheme.colors.onBackground,
                 focusedBorderColor = MaterialTheme.colors.primary,
